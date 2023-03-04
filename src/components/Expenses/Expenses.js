@@ -16,8 +16,8 @@ const Expenses = (props) => {
     });
   }
 
-  console.log("expenses in Expenses.js");
-  console.log(filteredExpenses);
+  // console.log("expenses in Expenses.js");
+  // console.log(filteredExpenses);
 
   const filterChangeHandler = (selectedYear) => {
     setFilterYear(selectedYear);

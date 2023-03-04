@@ -1,8 +1,8 @@
 import Chart from "../Chart/Chart";
 
 const ExpensesChart = (props) => {
-    console.log("expenses in ExpensesChart.js");
-    console.log(props.expenses);
+    // console.log("expenses in ExpensesChart.js");
+    // console.log(props.expenses);
 
     const chartDataPoints = [
         { label: 'Jan', value: 0 },
