@@ -5,18 +5,21 @@ import "./Expenses.css";
 import React, { useState } from "react";
 
 const Expenses = (props) => {
-  const [filterYear, setFilterYear] = useState("2023");
+  const [filterYear, setFilterYear] = useState("All");
 
-  const filteredExpenses = props.items.filter((expense) => {
-    return expense.date.getFullYear().toString() === filterYear;
-  });
+  let filteredExpenses = props.items;
+  
+  if (filterYear !== "All") {
+    filteredExpenses = props.items.filter((expense) => {
+      return expense.date.getFullYear().toString() === filterYear;
+    });
+  }
 
   const filterChangeHandler = (selectedYear) => {
     setFilterYear(selectedYear);
   };
 
   
-
   return (
     <Card className="expenses">
       <div>
