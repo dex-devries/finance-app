@@ -40,8 +40,9 @@ const ExpenseForm = (props) => {
 
     const expenseData = {
       title: t,
-      amount: a,
-      // NOTE: ate-only strings (e.g. "1970-01-01") are treated as UTC,
+      // NOTE: + enforces number conversion for amount
+      amount: +a,
+      // NOTE: date-only strings (e.g. "1970-01-01") are treated as UTC,
       // while date-time strings (e.g. "1970-01-01T12:00") are treated as local.
       date: new Date(d + "T00:00:00"),
     };
