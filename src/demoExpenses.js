@@ -210,5 +210,6 @@ const expenses = [
     date: new Date(2023, 1, 28),
   },
 ];
+expenses.reverse();
 
 export { expenses };
