@@ -2,7 +2,7 @@ const expenses = [
   {
     id: "9038492156",
     title: "Rent Payment",
-    amount: 1200.0,
+    amount: 800.0,
     date: new Date(2021, 0, 5),
   },
   {
@@ -30,15 +30,33 @@ const expenses = [
     date: new Date(2021, 0, 25),
   },
   {
+    id: "9038492157",
+    title: "Rent Payment",
+    amount: 800.0,
+    date: new Date(2021, 1, 5),
+  },
+  {
     id: "2937185098",
     title: "Medical Checkup",
     amount: 150.0,
     date: new Date(2021, 2, 5),
   },
   {
+    id: "9038492158",
+    title: "Rent Payment",
+    amount: 800.0,
+    date: new Date(2021, 2, 5),
+  },
+  {
     id: "8126350749",
     title: "Gas Bill",
     amount: 40.0,
+    date: new Date(2021, 3, 5),
+  },
+  {
+    id: "9038492159",
+    title: "Rent Payment",
+    amount: 800.0,
     date: new Date(2021, 3, 5),
   },
   {
@@ -54,10 +72,22 @@ const expenses = [
     date: new Date(2021, 4, 1),
   },
   {
+    id: "9038492160",
+    title: "Rent Payment",
+    amount: 800.0,
+    date: new Date(2021, 4, 5),
+  },
+  {
     id: "3478912560",
     title: "New Phone",
     amount: 800.0,
     date: new Date(2021, 4, 15),
+  },
+  {
+    id: "9038492161",
+    title: "Rent Payment",
+    amount: 800.0,
+    date: new Date(2021, 5, 5),
   },
   {
     id: "5064389127",
@@ -72,10 +102,22 @@ const expenses = [
     date: new Date(2021, 6, 5),
   },
   {
+    id: "9038492162",
+    title: "Rent Payment",
+    amount: 800.0,
+    date: new Date(2021, 6, 5),
+  },
+  {
     id: "9283746510",
     title: "Car Repair",
     amount: 400.0,
     date: new Date(2021, 7, 1),
+  },
+  {
+    id: "9038492163",
+    title: "Rent Payment",
+    amount: 800.0,
+    date: new Date(2021, 7, 5),
   },
   {
     id: "7462839510",
@@ -84,16 +126,52 @@ const expenses = [
     date: new Date(2021, 8, 5),
   },
   {
+    id: "9038492164",
+    title: "Rent Payment",
+    amount: 800.0,
+    date: new Date(2021, 8, 5),
+  },
+  {
+    id: "9038492165",
+    title: "Rent Payment",
+    amount: 800.0,
+    date: new Date(2021, 9, 5),
+  },
+  {
     id: "2956481370",
     title: "Dinner Party",
     amount: 150.0,
     date: new Date(2021, 9, 15),
   },
   {
+    id: "9038492166",
+    title: "Rent Payment",
+    amount: 800.0,
+    date: new Date(2021, 10, 5),
+  },
+  {
+    id: "9038492167",
+    title: "Rent Payment",
+    amount: 800.0,
+    date: new Date(2021, 11, 5),
+  },
+  {
+    id: "9038492168",
+    title: "Rent Payment",
+    amount: 800.0,
+    date: new Date(2022, 0, 5),
+  },
+  {
     id: "9815967105",
     title: "Groceries",
     amount: 50.25,
     date: new Date(2022, 0, 15),
+  },
+  {
+    id: "9038492169",
+    title: "Rent Payment",
+    amount: 800.0,
+    date: new Date(2022, 1, 5),
   },
   {
     id: "9481620375",
@@ -114,6 +192,18 @@ const expenses = [
     date: new Date(2022, 1, 28),
   },
   {
+    id: "9038492170",
+    title: "Rent Payment",
+    amount: 800.0,
+    date: new Date(2022, 2, 5),
+  },
+  {
+    id: "903849217071",
+    title: "Rent Payment",
+    amount: 800.0,
+    date: new Date(2022, 3, 5),
+  },
+  {
     id: "1092734568",
     title: "Water Bill",
     amount: 60.0,
@@ -126,10 +216,22 @@ const expenses = [
     date: new Date(2022, 3, 20),
   },
   {
+    id: "90384921707172",
+    title: "Rent Payment",
+    amount: 800.0,
+    date: new Date(2022, 4, 5),
+  },
+  {
     id: "1346792850",
     title: "Dinner",
     amount: 75.0,
     date: new Date(2022, 4, 20),
+  },
+  {
+    id: "9038492170717273",
+    title: "Rent Payment",
+    amount: 800.0,
+    date: new Date(2022, 5, 5),
   },
   {
     id: "9027153648",
@@ -144,9 +246,21 @@ const expenses = [
     date: new Date(2022, 5, 20),
   },
   {
+    id: "903849217071727374",
+    title: "Rent Payment",
+    amount: 800.0,
+    date: new Date(2022, 6, 5),
+  },
+  {
     id: "4718293650",
     title: "Netflix Subscription",
     amount: 15.0,
+    date: new Date(2022, 7, 5),
+  },
+  {
+    id: "903849217071727375",
+    title: "Rent Payment",
+    amount: 800.0,
     date: new Date(2022, 7, 5),
   },
   {
@@ -154,6 +268,18 @@ const expenses = [
     title: "Dentist Appointment",
     amount: 200.0,
     date: new Date(2022, 7, 15),
+  },
+  {
+    id: "903849217071727376",
+    title: "Rent Payment",
+    amount: 800.0,
+    date: new Date(2022, 8, 5),
+  },
+  {
+    id: "903849217071727377",
+    title: "Rent Payment",
+    amount: 800.0,
+    date: new Date(2022, 9, 5),
   },
   {
     id: "3950176248",
@@ -166,6 +292,12 @@ const expenses = [
     title: "Groceries",
     amount: 45.8,
     date: new Date(2022, 9, 15),
+  },
+  {
+    id: "903849217071727378",
+    title: "Rent Payment",
+    amount: 800.0,
+    date: new Date(2022, 10, 5),
   },
   {
     id: "7351829460",
@@ -186,10 +318,22 @@ const expenses = [
     date: new Date(2022, 11, 5),
   },
   {
+    id: "903849217071727379",
+    title: "Rent Payment",
+    amount: 800.0,
+    date: new Date(2023, 0, 5),
+  },
+  {
     id: "9827391540",
     title: "Groceries",
     amount: 45.25,
     date: new Date(2023, 0, 15),
+  },
+  {
+    id: "903849217071727380",
+    title: "Rent Payment",
+    amount: 800.0,
+    date: new Date(2023, 1, 5),
   },
   {
     id: "6184792530",
@@ -208,6 +352,12 @@ const expenses = [
     title: "Car Insurance",
     amount: 170.0,
     date: new Date(2023, 1, 28),
+  },
+  {
+    id: "903849217071727381",
+    title: "Rent Payment",
+    amount: 800.0,
+    date: new Date(2022, 2, 4),
   },
 ];
 expenses.reverse();
