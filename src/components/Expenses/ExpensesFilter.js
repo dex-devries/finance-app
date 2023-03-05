@@ -1,11 +1,16 @@
 import "./ExpensesFilter.css";
 
+// ExpensesFilter component expects props.onFilterChange() from Expenses.js. 
+// onFilterChange expects a four digit year as a string or "All"
 const ExpensesFilter = (props) => {
+
   const selectHandler = (e) => {
-    // console.log(e.target.value);
+    // console.log("Year in ExpensesFilter.js");
+    // console.log(e.target.value);S
     props.onFilterChange(e.target.value);
   };
 
+  // Select dropdown with options - values
   return (
     <div className="expenses-filter">
       <div className="expenses-filter__control">
