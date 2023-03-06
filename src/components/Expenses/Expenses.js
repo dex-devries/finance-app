@@ -3,6 +3,7 @@ import Card from "../UI/Card";
 import ExpensesFilter from "./ExpensesFilter";
 import ExpensesChart from "./ExpensesChart";
 import "./Expenses.css";
+import Total from "./Total";
 import React, { useState } from "react";
 
 const Expenses = (props) => {
@@ -25,6 +26,12 @@ const Expenses = (props) => {
     filteredExpenses = filteredExpenses.filter(
       expense => expense.date.getMonth().toString() === filterMonth
     );
+  }
+
+  // after filtering, calculate total to pass to Total.js
+  let total = 0;
+  for (const expense of filteredExpenses) {
+    total += expense.amount;
   }
 
   // Test
@@ -57,6 +64,7 @@ const Expenses = (props) => {
         />
       </div>
       <ExpensesChart expenses={filteredExpenses} />
+      <Total total={total} />
       <ExpenseList items={filteredExpenses} />
     </Card>
   );
