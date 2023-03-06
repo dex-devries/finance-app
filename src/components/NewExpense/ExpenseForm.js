@@ -1,6 +1,7 @@
 import "./ExpenseForm.css";
 import React, { useState } from "react";
 
+// ExpenseForm component expects props.onSave and props.onCancel from NewExpense
 const ExpenseForm = (props) => {
   
   // This whole code block just to style date correctly for dynamic max date :`(
@@ -21,23 +22,29 @@ const ExpenseForm = (props) => {
     // console.log(today);
   // End spaghetti
 
+  // state variables for t - title string, a - amount number, d - date string
   const [t, setTitle] = useState("");
   const [a, setAmount] = useState("");
   const [d, setDate] = useState(today);
 
+  // handles changes in title input and changes state
   const titleChangeHandler = (e) => {
     setTitle(e.target.value);
   };
+  // handles changes in amount iinput and changes state
   const amountChangeHandler = (e) => {
     setAmount(e.target.value);
   };
+  // handles changes in date input and changes state
   const dateChangeHandler = (e) => {
     setDate(e.target.value);
   };
 
+  // handles form submission and changes state
   const submitHandler = (e) => {
+    // stops http request from reloading page
     e.preventDefault();
-
+    // create expense object
     const expenseData = {
       title: t,
       // NOTE: + enforces number conversion for amount
@@ -46,13 +53,15 @@ const ExpenseForm = (props) => {
       // while date-time strings (e.g. "1970-01-01T12:00") are treated as local.
       date: new Date(d + "T00:00:00"),
     };
-
-    props.onSave(expenseData);
+    // call onSave(expenseData) to pass expense data back to NewExpense and change state
+    props.onSave(expenseData); 
+    // change state back to empty form
     setTitle("");
     setAmount("");
     setDate("");
   };
 
+  // handles the cancel button - passes false back to NewItem which changes state
   const cancelHandler = () => {
     props.onCancel(false);
   };
