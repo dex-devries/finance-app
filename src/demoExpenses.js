@@ -181,13 +181,13 @@ const expenses = [
   },
   {
     id: "6482931750",
-    title: "Gym Membership",
+    title: "Beyonce Concert",
     amount: 85.0,
     date: new Date(2022, 1, 15),
   },
   {
     id: "2804637195",
-    title: "Car Insurance",
+    title: "Motorcycle Insurance",
     amount: 150.0,
     date: new Date(2022, 1, 28),
   },
